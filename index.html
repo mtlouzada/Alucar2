@@ -19,18 +19,18 @@
             </div>
         </section>
 
-        <section>
+        <section class="secao-largura-limitada secao-conteudo">
             <h3>Sobre nós</h3>
             <p>Há 45 anos atuando na área de locação de veículos com segurança</p>
-            <img src="./assets/img1.jpg" alt="Imagem 1">
-            <img src="./assets/img2.jpg" alt="Imagem 2">
-            <img src="./assets/img3.jpg" alt="Imagem 3">
+            <img class="img-conteudo" src="./assets/img1.jpg" alt="Imagem 1">
+            <img class="img-conteudo" src="./assets/img2.jpg" alt="Imagem 2">
+            <img class="img-conteudo" src="./assets/img3.jpg" alt="Imagem 3">
             <p><span>O compromisso da Alucar é com a qualidade.</span></p>
             <p><span>Os melhores carros estão aqui!</span></p>
             <p><span>Assistência 24hrs.</span></p>
         </section>
 
-        <section>
+        <section class="secao-background-divisao">
             <div>
                 <h3>Contato</h3>
             </div>
@@ -38,42 +38,60 @@
     </header>
 
     <main>
-        <section>
+        <section class="secao-largura-limitada secao-conteudo">
             <h3>Análize de cadastro</h3>
             <p>Preencha os campos abaixo e analizaremos seus dados.<br> Se tudo estiver correto ligaremos para marcar uma visita sua á loja.</p>
 
             <form action="https://www.devmedia.com.br/codigos/formularios/aula9/">
                 <fieldset>
                     <legend>Dados pessoais</legend>
-                    <div>
+                    <div class="grupo-campo">
                         <label for="">Nome</label>
                         <input type="text" name="nome" placeholder="digite seu nome" required>
                     </div>
-                    <div>
+                    <div class="grupo-campo">
                         <label for="data_nascimento">Data de nascimento</label>
                         <input type="date" name="data_nascimento" required>
                     </div>
-                    <div>
+                    <div class="grupo-campo">
                         <label for="telefone">Telefone</label>
                         <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>CNH</legend>
-                    <div>
+                    <div class="grupo-campo">
                         <label for="numero_registro">Número de Registro</label>
                         <input type="number" name="numero_registro" placeholder="Informe o número da sua CNH" required>
                     </div>
-                    <div>
+                    <div class="grupo-campo">
                         <label for="">Validade</label>
                         <input type="date" name="validade" required>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Carro</legend>
-                    <div>
+                    <div class="grupo-campo">
                         <label for="">Modelo do carro</label>
-                        <select name="carro" id="" required></select>
+                        <select name="carro" required>
+                            <option value="--">Escolha um carro</option>
+                            <optgroup label="Volkswagem">
+                                <option value="Gol">Gol</option>
+                                <option value="Golf">Golf</option>
+                                <option value="Fox">Fox</option>
+                            </optgroup>
+                            <optgroup label="Fiat">
+                                <option value="Uno">Uno</option>
+                                <option value="Siena">Siena</option>
+                                <option value="Palio">Palio</option>
+                            </optgroup>
+                            <optgroup label="Nissan">
+                                <option value="Frontier">Frontier</option>
+                                <option value="Versa">Versa</option>
+                                <option value="Skyline GT-R">Skyline GT-R</option>
+                            </optgroup>
+                        </select>
+
                     </div>
                 </fieldset>
                 <button type="submit">Enviar dados</button>
